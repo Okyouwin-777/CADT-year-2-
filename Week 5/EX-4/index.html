@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+
+        <aside class="sidebar">
+            <p class="logo"><span class="logo-mark">M</span> MyDash</p>
+            <nav class="menu">
+                <a href="#" class="active">Overview</a>
+                <a href="#">Orders</a>
+                <a href="#">Customers</a>
+                <a href="#">Products</a>
+                <a href="#">Reports</a>
+                <a href="#">Settings</a>
+                <a href="#" class="logout">Log out</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+
+            <div class="topbar">
+                <header>
+                    <h1>Overview</h1>
+                    <p>Welcome back, Alex. Here is what happened this week.</p>
+                </header>
+
+                <div class="tools">
+                    <form class="search">
+                        <input type="search" placeholder="Search..." aria-label="Search">
+                        <button type="submit">Search</button>
+                    </form>
+                    <img class="avatar" src="image.png" alt="pfp">
+                </div>
+            </div>
+
+            <section class="stats">
+                <div class="card">
+                    <p class="card-label">Revenue</p>
+                    <p class="card-value">$48,200</p>
+                    <p class="card-change up">+12% vs last month</p>
+                </div>
+                <div class="card">
+                    <p class="card-label">Orders</p>
+                    <p class="card-value">1,240</p>
+                    <p class="card-change up">+8% vs last month</p>
+                </div>
+                <div class="card">
+                    <p class="card-label">New customers</p>
+                    <p class="card-value">3,892</p>
+                    <p class="card-change up">+4% vs last month</p>
+                </div>
+                <div class="card">
+                    <p class="card-label">Refunds</p>
+                    <p class="card-value">36</p>
+                    <p class="card-change down">+3% vs last month</p>
+                </div>
+            </section>
+
+            <section class="row">
+
+                <div class="panel chart">
+                    <div class="panel-head">
+                        <h2>Sales overview</h2>
+                        <span>Last 7 months</span>
+                    </div>
+                    <div class="bars">
+                        <div class="bar-col">
+                            <div class="bar" style="height: 80px;"></div>
+                            <span>Jan</span>
+                        </div>
+                        <div class="bar-col">
+                            <div class="bar" style="height: 120px;"></div>
+                            <span>Feb</span>
+                        </div>
+                        <div class="bar-col">
+                            <div class="bar" style="height: 100px;"></div>
+                            <span>Mar</span>
+                        </div>
+                        <div class="bar-col">
+                            <div class="bar" style="height: 160px;"></div>
+                            <span>Apr</span>
+                        </div>
+                        <div class="bar-col">
+                            <div class="bar" style="height: 140px;"></div>
+                            <span>May</span>
+                        </div>
+                        <div class="bar-col">
+                            <div class="bar" style="height: 190px;"></div>
+                            <span>Jun</span>
+                        </div>
+                        <div class="bar-col">
+                            <div class="bar current" style="height: 170px;"></div>
+                            <span>Jul</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel orders">
+                    <div class="panel-head">
+                        <h2>Recent orders</h2>
+                        <a href="#">View all</a>
+                    </div>
+                    <ul class="order-list">
+                        <li class="order">
+                            <span class="order-avatar">M</span>
+                            <div class="order-info">
+                                <p class="order-name">Maya R.</p>
+                                <p class="order-id">Order #1042</p>
+                            </div>
+                            <div class="order-right">
+                                <p class="order-amount">$120.00</p>
+                                <span class="status paid">Paid</span>
+                            </div>
+                        </li>
+                        <li class="order">
+                            <span class="order-avatar">T</span>
+                            <div class="order-info">
+                                <p class="order-name">Tom K.</p>
+                                <p class="order-id">Order #1041</p>
+                            </div>
+                            <div class="order-right">
+                                <p class="order-amount">$89.50</p>
+                                <span class="status pending">Pending</span>
+                            </div>
+                        </li>
+                        <li class="order">
+                            <span class="order-avatar">L</span>
+                            <div class="order-info">
+                                <p class="order-name">Lena S.</p>
+                                <p class="order-id">Order #1040</p>
+                            </div>
+                            <div class="order-right">
+                                <p class="order-amount">$240.00</p>
+                                <span class="status paid">Paid</span>
+                            </div>
+                        </li>
+                        <li class="order">
+                            <span class="order-avatar">O</span>
+                            <div class="order-info">
+                                <p class="order-name">Omar H.</p>
+                                <p class="order-id">Order #1039</p>
+                            </div>
+                            <div class="order-right">
+                                <p class="order-amount">$56.00</p>
+                                <span class="status refunded">Refunded</span>
+                            </div>
+                        </li>
+                        <li class="order">
+                            <span class="order-avatar">P</span>
+                            <div class="order-info">
+                                <p class="order-name">Priya N.</p>
+                                <p class="order-id">Order #1038</p>
+                            </div>
+                            <div class="order-right">
+                                <p class="order-amount">$310.00</p>
+                                <span class="status paid">Paid</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>
