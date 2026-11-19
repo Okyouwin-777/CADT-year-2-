@@ -1,0 +1,62 @@
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.content {
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    main {
+        flex-direction: row;
+    }
+
+    .content, 
+    .sidebar {
+        flex: 1;
+    }
+
+    header,
+    footer {
+        height: 90px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        flex-direction: row;
+    }
+
+    .content {
+        flex: 2;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+
+    header,
+    footer {
+        padding: 10px;
+        font-size: larger;
+    }
+}
